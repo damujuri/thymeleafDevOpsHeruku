@@ -50,13 +50,13 @@
 </thead>
 <tbody>
 <tr th:each="student:${students}">
-<td th:text="${student.Id}">Id</td>
+<td th:text="${student.id}">Id</td>
 <td th:text="${student.name}">Name</td>
 <td th:text="${student.department}">Department</td>
 <td th:text="${student.updatedBy}">Updated By</td>
 <td th:text="${student.updatedOn}">Updated On</td>
-<td><a th:href="@{/students/getOne/(Id=${student.Id})}" id="editButton" class="btn btn-warning">Edit</a> </td>
-<td><a th:href="@{/students/delete/(Id=${student.Id})}" id="deleteButton" class="btn btn-danger">Delete</a> </td>
+<td><a th:href="@{/students/getOne/(id=${student.id})}" id="editButton" class="btn btn-warning">Edit</a> </td>
+<td><a th:href="@{/students/delete/(id=${student.id})}" id="deleteButton" class="btn btn-danger">Delete</a> </td>
 </tr>
 </tbody>
 </table>

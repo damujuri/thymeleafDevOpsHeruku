@@ -1,9 +1,8 @@
-package com.kindsonthegenius.thymeleafapp.repositories;
+package com.dsp.thymeleafapp.repositories;
 
+import com.dsp.thymeleafapp.models.Student;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
-
-import com.kindsonthegenius.thymeleafapp.models.Student;
 
 @Repository
 public interface StudentRepository extends CrudRepository<Student, Integer> {
